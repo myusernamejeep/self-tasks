@@ -10,7 +10,7 @@ app = connect()
   .use('/test', connect.static('test/'))
   .use('/test', connect.static('app'))
   ;
-
-http.createServer(app).listen(8082, function() {
-  console.log('Running on http://localhost:8082');
+var port = process.env.PORT || 8082;
+http.createServer(app).listen(port, function() {
+  console.log('Running on http://localhost: ' ,port);
 });
