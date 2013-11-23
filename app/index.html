@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>myTasks</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/require.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/doc.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body id="main">
+  <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">myTasks</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <!--<li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>-->
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tasks <b class="caret"></b></a>
+              <ul class="dropdown-menu" id="dropdown-tasks">
+                <li class="dropdown-header">List of task sheets</li>
+              </ul>
+            </li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.navbar -->
+
+  <div class="container">
+    <div id="todo-app"></div>
+    <hr>
+  </div><!--/.container-->
+  
+  <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">&copy; myusernamejeep 2013 . Create by <a href="mailto:myusernamejeep@gmail.com">Jumphol</a>.</p>
+      </div>
+  </div>
+ 
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
